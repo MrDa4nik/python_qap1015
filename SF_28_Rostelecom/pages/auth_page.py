@@ -74,7 +74,7 @@ class AuthPage(BasePage):
         self.find_element(AuthPageLocators.AUTH_PASSWORD_INPUT).click()
         assert self.is_element_present(AuthPageLocators.AUTH_USERNAME_INPUT_ACTIV_LOGIN), "element not found"
 
-    # RT_013 проверка переключения на email при вводе в поле телефона
+    # RT_013 проверка переключения на лицевой счет при вводе в поле телефона
     def tab_ls(self):
         self.find_element(AuthPageLocators.AUTH_USERNAME_INPUT).send_keys(valid_ls)
         self.find_element(AuthPageLocators.AUTH_PASSWORD_INPUT).click()
