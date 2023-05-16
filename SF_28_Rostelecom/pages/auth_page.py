@@ -87,7 +87,7 @@ class AuthPage(BasePage):
                in self.browser.current_url, "url do not match"
         assert self.is_element_present(AuthPageLocators.CHANGE_PASS_HEADING), "element not found"
 
-    # RT_015 проверка ссылки на форму восстановления пароля
+    # RT_015 проверка ссылки на форму входа по коду
     def authentication_cod(self):
         self.find_element(AuthPageLocators.AUTH_COD).click()
         assert self.is_element_present(AuthPageLocators.AUTH_FORM_COD), "element not found"
