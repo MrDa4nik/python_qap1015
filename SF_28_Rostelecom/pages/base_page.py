@@ -21,10 +21,6 @@ class BasePage():
     def open(self):
         self.browser.get(self.url)
 
-    # метод open_reg_page открывает форму регистрации в браузере, используя метод get()
-    def open_reg_page(self):
-        self.browser.get(self.url)
-
 
     # метод is_element_present перехватывает исключение
     # будет использоваться для проверки присутствия элемента на странице
